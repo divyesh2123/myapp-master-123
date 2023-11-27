@@ -9,11 +9,14 @@ import APIDisplayWithClass from './APIDisplayWithClass';
 import FormFunction from './FormFunction';
 import { Ecommerce } from './Ecommerce';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MyProps from './MyProps';
+import FormInClass from './FormInClass';
+import SingUpForm from './SingUpForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Ecommerce />
+    <SingUpForm />
   </React.StrictMode>
 );
 

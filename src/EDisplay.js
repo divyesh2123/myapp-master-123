@@ -1,17 +1,20 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
 export const EDisplay = ({title,img,des}) => {
   return (
+    <Col xs lg="3">
     <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={props.img} />
+    <Card.Img variant="top" src={img} />
     <Card.Body>
-      <Card.Title>{data.title}</Card.Title>
+      <Card.Title>{title}</Card.Title>
       <Card.Text>
-        {data.des}
+        {des}
       </Card.Text>
       <Button variant="primary">Go somewhere</Button>
     </Card.Body>
   </Card>
+  </Col>
   )
 }

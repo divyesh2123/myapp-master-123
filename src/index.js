@@ -12,11 +12,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyProps from './MyProps';
 import FormInClass from './FormInClass';
 import SingUpForm from './SingUpForm';
+import AutoLayoutExample from './AutoLayoutExample';
+import DataManagement from './DataManagement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SingUpForm />
+    <DataManagement />
   </React.StrictMode>
 );
 

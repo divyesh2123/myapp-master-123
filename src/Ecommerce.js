@@ -2,6 +2,9 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 import { EDisplay } from './EDisplay';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 
 
 export const Ecommerce = () => {
@@ -22,7 +25,8 @@ export const Ecommerce = () => {
 
     },[])
   return (
-    <>
+    <Container>
+       <Row >
       {
         data.map((v)=>{
 
@@ -35,8 +39,8 @@ export const Ecommerce = () => {
       
 
       }
-      
+      </Row>
 
-    </>
+    </Container>
   )
 }

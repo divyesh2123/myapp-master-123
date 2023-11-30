@@ -14,11 +14,12 @@ import FormInClass from './FormInClass';
 import SingUpForm from './SingUpForm';
 import AutoLayoutExample from './AutoLayoutExample';
 import DataManagement from './DataManagement';
+import CustomerData from './CustomerData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DataManagement />
+    <CustomerData />
   </React.StrictMode>
 );
 

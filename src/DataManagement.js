@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { MyManagment } from './MyManagment';
 
 export default function DataManagement() {
    const [data,setData]= useState({
@@ -29,7 +30,7 @@ export default function DataManagement() {
             p[index] = data;
         }
 
-        setIndex(-1);
+        setIndex(-1)
         setMultipleData(p);
 
     }
@@ -68,33 +69,14 @@ export default function DataManagement() {
             <input type='submit' value="Save"/>
 
         </form>
-        <table>
-
-        {
-
-multileData.map((v,index)=>{
-
-    return(<tr><td>{v.firstName}</td><td>{v.lastName}</td>
-
-            <td><button onClick={()=>{
-                deleteInfo(index)
-
-            }}>Delete</button></td>
-
-            
-<td><button onClick={()=>{
-                editInfo(index)
-
-            }}>edit</button></td>
     
-    </tr>)
-
-})
-
-}
-        </table>
-       
         
+        <MyManagment 
+        
+        multileData={multileData}
+        deleteInfo={deleteInfo}
+        editInfo={editInfo}
+        />
     </div>
   )
 }

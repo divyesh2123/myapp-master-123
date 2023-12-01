@@ -15,11 +15,13 @@ import SingUpForm from './SingUpForm';
 import AutoLayoutExample from './AutoLayoutExample';
 import DataManagement from './DataManagement';
 import CustomerData from './CustomerData';
+import { FormWithBoostrap } from './FormWithBoostrap';
+import MyFormUser from './MyFormUser';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CustomerData />
+    <MyFormUser />
   </React.StrictMode>
 );
 

@@ -18,12 +18,15 @@ import CustomerData from './CustomerData';
 import { FormWithBoostrap } from './FormWithBoostrap';
 import MyFormUser from './MyFormUser';
 import Login from './Login';
+import { BrowserRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Login />
+      <BrowserRouter>
+    <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

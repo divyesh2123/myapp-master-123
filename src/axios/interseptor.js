@@ -3,15 +3,18 @@ import axios from "axios";
 let d = JSON.parse(localStorage.getItem("token"));
 const authfetchI = axios.create({
     baseURL : "https://real-pear-fly-kilt.cyclic.app/"
+    
 }) 
 
 authfetchI.interceptors.request.use((request)=>{
 
+        if(!request.url.includes("login"))
+        {
       
         request.headers["Authorization"] = `bearer ${d?.jwtToken}`
 
         request.headers["Content-Type"] = `Application/json`
-
+        }
         return request;
 },(errow)=>{
 

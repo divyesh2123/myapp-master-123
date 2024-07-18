@@ -3,26 +3,22 @@ import './App.css';
 import Login from './Login';
 import { Link, Route, Routes } from 'react-router-dom';
 import { Home } from './Home';
+import LangContext from './Context/UserContext';
+import { useState } from 'react';
+import UserRegistration from './UserRegistration';
+import Header from './Header';
+import Example from './Example';
 
 function App() {
+  const [lan,setlan]= useState('en')
   return (
-    <div className="App">
+    <LangContext.Provider value={{lan,setlan}}>
 
-      <Link to="/">Login</Link>
-     
-      <Routes>
+      <Header/>
+      <UserRegistration/>
+      <Example/>
 
-      <Route path="/" element={<Login />}>
-        </Route>
-
-
-        <Route path="/home" element={<Home />}>
-        </Route>
-
-        <Route />
-      </Routes>
-
-    </div>
+    </LangContext.Provider>
   );
 }
 

@@ -19,13 +19,17 @@ import { FormWithBoostrap } from './FormWithBoostrap';
 import MyFormUser from './MyFormUser';
 import Login from './Login';
 import { BrowserRouter } from 'react-router-dom';
+import ShowMoreTextToggle from './ShowMoreTextToggle';
+import MyParet from './MyParet';
+import MyData from './MyData';
+import MyTY from './MyTY';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
-    <App />
+      <MyTY/>
     </BrowserRouter>
   </React.StrictMode>
 );

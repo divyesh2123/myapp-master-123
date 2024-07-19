@@ -23,14 +23,18 @@ import ShowMoreTextToggle from './ShowMoreTextToggle';
 import MyParet from './MyParet';
 import MyData from './MyData';
 import MyTY from './MyTY';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import Counter from './Counter';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
-      <MyTY/>
-    </BrowserRouter>
+      <Provider store={store}>
+
+        <Counter/>
+      </Provider>
   </React.StrictMode>
 );
 

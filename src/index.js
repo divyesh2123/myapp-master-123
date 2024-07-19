@@ -26,6 +26,7 @@ import MyTY from './MyTY';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import Counter from './Counter';
+import User from './User';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -34,6 +35,7 @@ root.render(
       <Provider store={store}>
 
         <Counter/>
+        <User/>
       </Provider>
   </React.StrictMode>
 );

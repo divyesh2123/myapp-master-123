@@ -15,7 +15,7 @@ export default function Counter() {
     dis(dec())
   }
 
-  const counter = useSelector(y=>y);
+  const counter = useSelector(y=>y.counter);
 
 
   return (

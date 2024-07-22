@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Request, UserFail, UserSuc } from './actions/userAction';
+import { getUser } from './asycactions/userAsyncAction';
 
 export default function User() {
 
@@ -11,16 +12,9 @@ export default function User() {
     console.log(data);
 
     useEffect(()=>{
-        dis(Request())
+        dis(getUser())
 
-        fetch("https://jsonplaceholder.typicode.com/posts")
-        .then(y=>y.json())
-        .then(y=>{
-            dis(UserSuc(y))
-        }).catch(y=>{
-            dis(UserFail(y))
-        })
-
+      
     },[])
 
 
